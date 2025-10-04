@@ -31,6 +31,7 @@ public class DefenderHealth : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
         if (health <= 0)
         {
+            //Debug.Log(" Health defender: " + gameObject.health);
             Destroy(gameObject);
         }
         else
